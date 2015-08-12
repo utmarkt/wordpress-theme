@@ -81,12 +81,16 @@ h1 a:hover {
 ul.menu {
 	@include span-columns(6);
 	@include shift (2);
+<<<<<<< HEAD
+	display: inline block;
+=======
 }
 
 ul.menu li {
 	padding: 0;
 	display: inline-block;
 	margin-right: 50px;
+>>>>>>> b8f8e776c037f1223838bc5374bc6ae399a10f05
 }
 
 ul.menu li a {
@@ -120,10 +124,28 @@ ul.menu li a:hover {
 ul.menu li a:hover:after {
 	width: 100%;
 }
+<<<<<<< HEAD
+=======
 
 
 
+>>>>>>> b8f8e776c037f1223838bc5374bc6ae399a10f05
 
+//FOOTER STYLES
+footer{
+	@include span-columns(12);
+	text-align: center;
+	color: $slategrey;
+}
+footer li{
+	display: block;
+}
+footer i{
+	color: $slategrey;
+}
+footer i:hover{
+	color: $teal;
+}
 
 
 
