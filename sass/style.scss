@@ -81,7 +81,7 @@ h1 a:hover {
 ul.menu {
 	@include span-columns(6);
 	@include shift (2);
-	display: inline block
+	display: inline block;
 }
 
 ul.menu li a {
@@ -114,14 +114,22 @@ ul.menu li a:hover {
 ul.menu li a:hover:after {
 	width: 100%;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 96e80fa43c8a362878d1d6856dadf2d865614646
-
-
-
-
+//FOOTER STYLES
+footer{
+	@include span-columns(12);
+	text-align: center;
+	color: $slategrey;
+}
+footer li{
+	display: block;
+}
+footer i{
+	color: $slategrey;
+}
+footer i:hover{
+	color: $teal;
+}
 
 
 
