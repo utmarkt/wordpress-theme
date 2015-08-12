@@ -20,19 +20,32 @@ Default Styling
 */
 @import "bourbon/bourbon";
 @import "neat/neat";
+@import 'colours';
+
+html {
+	font-size: 10px
+}
+
+body {
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+}
 
 img {
 	max-width: 100%;
 }
+
 h1,
 h2,
 h3{
 	font-family: 'Belleza', sans-serif;
 }
 
-body {
-	color: #333;
-	font-family: 'Open Sans', sans-serif;
+h1 {
+	font-size: 3rem;
+	@include span-columns(4);
+	display: inline-block;
+	margin: 0;
 }
 
 .container {
@@ -47,6 +60,58 @@ body {
 }
 
 .full {
+	width: 100%;
+}
+
+/*Header Styles*/
+
+header {
+	background: $white;
+	padding: 3% 0;
+}
+
+h1 a {
+	color: $slategrey;
+}
+
+h1 a:hover {
+	color: $teal;
+}
+
+ul.menu {
+	@include span-columns(6);
+	@include shift (2);
+	display: inline block
+}
+
+ul.menu li a {
+	background: $white;
+	color: $slategrey;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	@include span-columns(1.5 of 6);
+	text-align: center;
+	position: relative;
+}
+
+ul.menu li a:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	width: 0;
+	height: 3px;
+	background: $teal;
+	content: '';
+	transition: width 0.3s;
+}
+
+ul.menu li a:hover {
+	color: $teal;
+}
+
+ul.menu li a:hover:after {
 	width: 100%;
 }
 
