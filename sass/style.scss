@@ -81,7 +81,16 @@ h1 a:hover {
 ul.menu {
 	@include span-columns(6);
 	@include shift (2);
+<<<<<<< HEAD
 	display: inline block;
+=======
+}
+
+ul.menu li {
+	padding: 0;
+	display: inline-block;
+	margin-right: 50px;
+>>>>>>> b8f8e776c037f1223838bc5374bc6ae399a10f05
 }
 
 ul.menu li a {
@@ -90,13 +99,13 @@ ul.menu li a {
 	font-size: 1.6rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	@include span-columns(1.5 of 6);
 	text-align: center;
 	position: relative;
+	margin: 0;
+	padding: 0;
 }
 
 ul.menu li a:after {
-	display: block;
 	position: absolute;
 	left: 0;
 	bottom: -10px;
@@ -105,6 +114,7 @@ ul.menu li a:after {
 	background: $teal;
 	content: '';
 	transition: width 0.3s;
+	padding: 0;
 }
 
 ul.menu li a:hover {
@@ -114,6 +124,12 @@ ul.menu li a:hover {
 ul.menu li a:hover:after {
 	width: 100%;
 }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> b8f8e776c037f1223838bc5374bc6ae399a10f05
 
 //FOOTER STYLES
 footer{
