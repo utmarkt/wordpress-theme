@@ -164,11 +164,28 @@ function hackeryou_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+	register_sidebar( array(
+		'name' => 'footer-logo',
+		'id' => 'footer-logo',
+		'description' => 'footer-logo',
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );	
+	register_sidebar( array(
+		'name' => 'footer-social',
+		'id' => 'footer-social',
+		'description' => 'footer-social',
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 
 }
 
 add_action( 'widgets_init', 'hackeryou_widgets_init' );
-
 /**
  * Removes the default styles that are packaged with the Recent Comments widget.
  */
