@@ -1,5 +1,5 @@
 <footer>
-  <div class="container">
+  <div class="container social-footer">
   	<?php  dynamic_sidebar( 'footer-logo' ); ?>
     <p>&copy; Evan Davis &amp Jeanne Schiller <?php echo date('Y'); ?></p>
     <?php  dynamic_sidebar( 'footer-social' ); ?>

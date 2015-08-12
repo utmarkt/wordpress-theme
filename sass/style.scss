@@ -82,7 +82,6 @@ h1 a:hover {
 
 ul.menu {
 	@include span-columns(7.5);
-
 }
 
 ul.menu li {
@@ -123,9 +122,21 @@ ul.menu li a:hover:after {
 	width: 100%;
 }
 
-
-
-
+//FOOTER STYLES
+footer{
+	@include span-columns(12);
+	text-align: center;
+	color: $slategrey;
+}
+footer li{
+	display: block;
+}
+footer i{
+	color: $slategrey;
+}
+footer i:hover{
+	color: $teal;
+}
 
 
 
