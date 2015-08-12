@@ -81,7 +81,12 @@ h1 a:hover {
 ul.menu {
 	@include span-columns(6);
 	@include shift (2);
-	display: inline block
+}
+
+ul.menu li {
+	padding: 0;
+	display: inline-block;
+	margin-right: 50px;
 }
 
 ul.menu li a {
@@ -90,13 +95,13 @@ ul.menu li a {
 	font-size: 1.6rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	@include span-columns(1.5 of 6);
 	text-align: center;
 	position: relative;
+	margin: 0;
+	padding: 0;
 }
 
 ul.menu li a:after {
-	display: block;
 	position: absolute;
 	left: 0;
 	bottom: -10px;
@@ -105,6 +110,7 @@ ul.menu li a:after {
 	background: $teal;
 	content: '';
 	transition: width 0.3s;
+	padding: 0;
 }
 
 ul.menu li a:hover {
