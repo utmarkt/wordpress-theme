@@ -1,6 +1,8 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  	<?php  dynamic_sidebar( 'footer-logo' ); ?>
+    <p>&copy; Evan Davis &amp Jeanne Schiller <?php echo date('Y'); ?></p>
+    <?php  dynamic_sidebar( 'footer-social' ); ?>
   </div>
 </footer>
 
