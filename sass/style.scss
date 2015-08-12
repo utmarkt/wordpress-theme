@@ -39,13 +39,14 @@ h1,
 h2,
 h3{
 	font-family: 'Belleza', sans-serif;
+	margin: 0;
 }
 
 h1 {
-	font-size: 3rem;
-	@include span-columns(4);
+	font-size: 2.25rem;
 	display: inline-block;
 	margin: 0;
+	@include span-columns(4.5);
 }
 
 .container {
@@ -67,7 +68,8 @@ h1 {
 
 header {
 	background: $white;
-	padding: 3% 0;
+	@include outer-container;
+	padding: 2% 0;
 }
 
 h1 a {
@@ -79,18 +81,13 @@ h1 a:hover {
 }
 
 ul.menu {
-	@include span-columns(6);
-	@include shift (2);
-<<<<<<< HEAD
-	display: inline block;
-=======
+	@include span-columns(7.5);
 }
 
 ul.menu li {
 	padding: 0;
 	display: inline-block;
 	margin-right: 50px;
->>>>>>> b8f8e776c037f1223838bc5374bc6ae399a10f05
 }
 
 ul.menu li a {
@@ -124,12 +121,6 @@ ul.menu li a:hover {
 ul.menu li a:hover:after {
 	width: 100%;
 }
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> b8f8e776c037f1223838bc5374bc6ae399a10f05
 
 //FOOTER STYLES
 footer{
