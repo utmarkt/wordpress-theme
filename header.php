@@ -7,6 +7,7 @@
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <link href='http://fonts.googleapis.com/css?family=Belleza|Open+Sans:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
