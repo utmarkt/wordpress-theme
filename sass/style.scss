@@ -70,6 +70,10 @@ h2{
 	margin-right: 5%;
 }
 
+.content-grey {
+	background: $lightgrey;
+}
+
 .full {
 	width: 100%;
 }
@@ -143,14 +147,19 @@ ul.menu li a:hover:after {
 	background: white;
 }
 
-/*index.php styles*/
+/*home.php styles*/
+
+.homepage-container {
+	@include outer-container;
+	padding: 3% 0;
+}
+
+.boxes-container {
+	max-width: 970px;
+}
 
 .main {
 	background: $lightgrey;
-}
-
-.container {
-	@include outer-container;
 }
 
 .content {
@@ -158,8 +167,38 @@ ul.menu li a:hover:after {
 	background: white;
 }
 
-.content-grey {
-	background: $lightgrey;
+.blog-title {
+	font-size: 2rem;
+}
+
+.main-photo-container {
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+.main-photo, .blog-photo {
+	margin: 5px;
+}
+
+.main-title {
+	color: $slategrey;
+	position: absolute;
+	top: 40%;
+	left: 5%;
+}
+
+.blog-photo-container {
+	position: relative;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.blog-title {
+	position: absolute;
+	top: 50px;
+	left: 20px;
+	color: $teal;
 }
 //GALERY STYLES
 .ms-item {
