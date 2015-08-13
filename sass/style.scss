@@ -138,6 +138,10 @@ ul.menu li a:hover:after {
 	@include outer-container;
 }
 
+//SINGLE POST STYLES
+.single-container{
+	background: white;
+}
 
 /*index.php styles*/
 
@@ -178,24 +182,24 @@ ul.menu li a:hover:after {
 	width: 100%;
 }
 //FOOTER STYLES
-footer{
+.social-footer{
 	@include span-columns(12);
 	text-align: center;
 	color: $slategrey;
 	background: $lightgrey;
 	padding: 3%;
 }
-footer li{
+.social-footer li{
 	display: block;
 }
-footer i{
+.social-footer  i{
 	color: $slategrey;
 }
-footer a{
+.social-footer  a{
 	font-size: 2rem;
 	padding: 0 1%;
 }
-footer i:hover{
+.social-footer  i:hover{
 	color: $teal;
 }
 
