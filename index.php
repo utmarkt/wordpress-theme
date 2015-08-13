@@ -6,11 +6,7 @@
 
     <div class="content">
     		<?php get_template_part( 'loop', 'index' );	?>
-    		
-
-
     </div> <!--/.content -->
-
   </div> <!-- /.container -->
 </div> <!-- /.main -->
 
