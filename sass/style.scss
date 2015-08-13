@@ -174,21 +174,22 @@ ul.menu li a:hover:after {
 }
 .page-full-text{
 	display: block;
-	@include span-columns(11);
+	@include span-columns(12);
 	@include shift(-5);
 	color: $white;
 	background: $teal;
 	padding: 15%;
 	padding-top: 20vh;
+
 }
 .page-full-img{
 	display: block;
-	@include span-columns(6);
-	@include shift(3);
-	height: 20vh;
+	@include span-columns(12);
+	@include shift(3.5);
 	background: $white;
 	position: fixed;
 	padding-top:5%;
+	width: 100%;
 
 }
 .about-me-footer{
