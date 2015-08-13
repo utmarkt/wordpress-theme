@@ -192,6 +192,9 @@ ul.menu li a:hover:after {
 	width: 100%;
 }
 //FOOTER STYLES
+.footer-container{
+	background: $lightgrey;
+}
 footer{
 	@include outer-container;
 }

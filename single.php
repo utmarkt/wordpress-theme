@@ -48,6 +48,7 @@
 
     </div> <!-- /.container -->
   </div> <!-- /.main -->
-
-  <?php get_footer(); ?>
+  <div class="footer-container">
+    <?php get_footer(); ?>
+  </div>
 </div> <!-- /.single-container -->
