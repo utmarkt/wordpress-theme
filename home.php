@@ -5,7 +5,7 @@
   <div class="container">
 
 	<!-- Content -->
-    <div class="content">
+    <div class="content-grey">
 
 		<?php  if(have_posts()){
 			while(have_posts()) {
