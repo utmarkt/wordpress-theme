@@ -16,7 +16,7 @@
 
 
 <body <?php body_class(); ?>>
-
+<div class="single-container">
 <header>
   <div class="container">
     <h1>
@@ -31,4 +31,5 @@
     )); ?>
   </div> <!-- /.container -->
 </header><!--/.header-->
+</div>
 
