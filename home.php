@@ -15,7 +15,7 @@
                     <!-- content that is on the home page goes in this loop -->
                     <div class="main-photo-container">
                         <img class="main-photo"><?php the_post_thumbnail('square'); ?></img>
-                        <h2 class="main-title"><?php the_title(); ?></h2>
+                        <h2 class="main-title"><?php the_content(); ?></h2>
                     </div>
                     
                     <?php 
@@ -30,8 +30,11 @@
                             <!-- For each blog post you get to work with that in here -->
                             <div class="blog-photo-container">
                                  <img class="blog-photo"><?php the_post_thumbnail('small-square'); ?></img>
-                                <h3 class="blog-title"><a><?php the_title(); ?></a></h3>
-                            </div>
+                                 <div class="blog-info">
+                                    <h3 class="blog-title"><a><?php the_title(); ?></a></h3>
+                                    <p class="blog-date"><?php the_date('M j, Y'); ?></p>
+                                </div> <!--/.blog-info-->
+                            </div><!--.blog-photo-container-->
 
                             <?php
                         }

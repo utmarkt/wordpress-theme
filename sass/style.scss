@@ -184,8 +184,10 @@ ul.menu li a:hover:after {
 .main-title {
 	color: $slategrey;
 	position: absolute;
-	top: 40%;
-	left: 5%;
+	top: 30px;
+	left: 30px;
+	font-size: 3rem;
+	text-align: left;
 }
 
 .blog-photo-container {
@@ -194,11 +196,39 @@ ul.menu li a:hover:after {
 	margin-bottom: 5px;
 }
 
-.blog-title {
+.blog-info {
+	background: rgba(255, 255, 255, 0.8);
+	display: none;
 	position: absolute;
-	top: 50px;
+	top: 10px;
 	left: 20px;
-	color: $teal;
+	bottom: 15px;
+	right: 10px;
+}
+
+.blog-photo-container:hover .blog-info {
+	display: block;
+}
+
+.blog-title {
+	text-align: center;
+	padding-top: 25%;
+	font-size: 2rem;
+	padding-bottom: 5%;
+}
+
+.blog-title a {
+	color: $slategrey;
+}
+
+.blog-date {
+	font-size: 1.2rem;
+	font-family: 'Belleza', sans-serif;
+	color: $slategrey;
+	text-align: center;
+	padding-top: 3%;
+	margin: 0 10%;
+	border-top: 2px solid $teal;
 }
 //GALERY STYLES
 .ms-item {

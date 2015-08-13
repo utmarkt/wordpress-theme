@@ -7,9 +7,5 @@ $(function(){
     		columnWidth: '.ms-item',                
   		});   
     });    
-
-
-
-
-
 });
+
