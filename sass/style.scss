@@ -128,7 +128,16 @@ ul.menu li a:hover:after {
 /*index.php styles*/
 
 .main {
+	background: $lightgrey;
+}
+
+.container {
 	@include outer-container;
+	padding: 2%;
+}
+
+.content {
+	width: 100%;
 }
 
 //FOOTER STYLES
