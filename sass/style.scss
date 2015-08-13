@@ -194,11 +194,13 @@ ul.menu li a:hover:after {
 }
 //FOOTER STYLES
 .social-footer{
+	@include outer-container;
 	@include span-columns(12);
 	text-align: center;
 	color: $slategrey;
 	background: $lightgrey;
 	padding: 3%;
+	width:100%;
 }
 .social-footer li{
 	display: block;
