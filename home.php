@@ -5,7 +5,7 @@
   <div class="container">
 
 	<!-- Content -->
-    <div class="content">
+    <div class="content-grey">
 
 		<?php  if(have_posts()){
 			while(have_posts()) {
@@ -47,5 +47,6 @@
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
-
-<?php get_footer(); ?>
+<div class="footer-container content-grey">
+    <?php get_footer(); ?>
+</div>

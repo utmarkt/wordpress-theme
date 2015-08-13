@@ -158,6 +158,10 @@ ul.menu li a:hover:after {
 	background: white;
 }
 
+.content-grey {
+	background: $lightgrey;
+}
+
 //ABOUT US/CONTACT/RSVP STYLES
 .about-me-container{
 	background: white;
@@ -192,9 +196,6 @@ ul.menu li a:hover:after {
 	width: 100%;
 }
 //FOOTER STYLES
-.footer-container{
-	background: $lightgrey;
-}
 footer{
 	@include outer-container;
 }
@@ -205,6 +206,7 @@ footer{
 	background: $lightgrey;
 	padding: 3%;
 	width:100%;
+	z-index: 20;
 }
 .social-footer li{
 	display: block;
