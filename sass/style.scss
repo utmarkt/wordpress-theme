@@ -192,8 +192,10 @@ ul.menu li a:hover:after {
 	width: 100%;
 }
 //FOOTER STYLES
-.social-footer{
+footer{
 	@include outer-container;
+}
+.social-footer{
 	@include span-columns(12);
 	text-align: center;
 	color: $slategrey;
