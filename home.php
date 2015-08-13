@@ -2,22 +2,22 @@
 <?php get_header(); ?>
 
 <div class="main">
-  <div class="container">
+  <div class="homepage-container">
 
 	<!-- Content -->
     <div class="content-grey">
-
+    <div class="boxes-container">
 		<?php  if(have_posts()){
 			while(have_posts()) {
 				the_post();
 				?>
                     <!-- Home page posts -->
                     <!-- content that is on the home page goes in this loop -->
-                    <h2><?php the_title(); ?></h2>
-
-                    <span class="image image-full"><?php the_post_thumbnail('square'); ?></span>
-
-
+                    <div class="main-photo-container">
+                        <img class="main-photo"><?php the_post_thumbnail('square'); ?></img>
+                        <h2 class="main-title"><?php the_title(); ?></h2>
+                    </div>
+                    
                     <?php 
                     $postsArgs = array('post_type' => 'post', 'posts_per_page' => 8);
                     $postsLoop = new WP_Query($postsArgs);
@@ -25,11 +25,13 @@
                     if($postsLoop->have_posts()) {
                         while($postsLoop->have_posts()) {
                             $postsLoop->the_post();
-
                             ?>
                             <!-- Blog posts -->
                             <!-- For each blog post you get to work with that in here -->
-                            <h3><?php the_title(); ?></h3>
+                            <div class="blog-photo-container">
+                                 <img class="blog-photo"><?php the_post_thumbnail('small-square'); ?></img>
+                                <h3 class="blog-title"><a><?php the_title(); ?></a></h3>
+                            </div>
 
                             <?php
                         }
@@ -42,8 +44,9 @@
 			}//end of while loop
 		}//end of if statement
 		?>
+        </div> <!--/.boxes-container-->
 
-    </div> <!--/.content -->
+    </div> <!--/.content-grey -->
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
