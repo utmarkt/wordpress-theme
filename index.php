@@ -12,5 +12,6 @@
     </div> <!--/.content -->
   </div> <!-- /.container -->
 </div> <!-- /.main -->
-
+ <div class="footer-container content-grey">
 <?php get_footer(); ?>
+</div>
