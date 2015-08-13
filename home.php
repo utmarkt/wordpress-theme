@@ -31,7 +31,7 @@
                             <div class="blog-photo-container">
                                  <img class="blog-photo"><?php the_post_thumbnail('small-square'); ?></img>
                                  <div class="blog-info">
-                                    <h3 class="blog-title"><a><?php the_title(); ?></a></h3>
+                                    <h3 class="blog-title"><a href= <?php the_permalink( get_page_by_title("<?php the_title(); ?>")); ?> ><?php the_title(); ?></a></h3>
                                     <p class="blog-date"><?php the_date('M j, Y'); ?></p>
                                 </div> <!--/.blog-info-->
                             </div><!--.blog-photo-container-->
