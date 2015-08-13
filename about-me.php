@@ -27,7 +27,7 @@
 		</div> <!-- /.page-full-img -->    
 	  </div> <!-- /.container -->
 	</div> <!-- /.main -->
-	<div class="about-me-footer content-grey">
+</div>	
+<div class="about-me-footer footer-container content-grey">
 	<?php get_footer(); ?>
-	</div>
 </div>
