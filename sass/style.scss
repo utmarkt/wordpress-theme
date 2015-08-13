@@ -216,8 +216,8 @@ ul.menu li a:hover:after {
 }
 .page-full-text{
 	display: block;
-	@include span-columns(12);
-	@include shift(-5);
+	@include span-columns(9);
+	@include shift(-2);
 	color: $white;
 	background: $teal;
 	padding: 15%;
@@ -226,8 +226,8 @@ ul.menu li a:hover:after {
 }
 .page-full-img{
 	display: block;
-	@include span-columns(12);
-	@include shift(3.5);
+	@include span-columns(7);
+	@include shift(5);
 	background: $white;
 	position: fixed;
 	padding-top:5%;
@@ -235,8 +235,10 @@ ul.menu li a:hover:after {
 
 }
 .about-me-footer{
-	position: absolute;
+	position: fixed;
+	bottom: 0;
 	width: 100%;
+	z-index: 10;
 }
 //FOOTER STYLES
 footer{
@@ -249,7 +251,6 @@ footer{
 	background: $lightgrey;
 	padding: 3%;
 	width:100%;
-	z-index: 20;
 }
 .social-footer li{
 	display: block;
