@@ -7,22 +7,9 @@
 	<!-- Content -->
     <div class="content">
 
-    		<?php get_template_part( 'loop', 'index' );?>
-
-    		<?php  if(have_posts()){
-    			while(have_posts()) {
-    				the_post();
-    				?>
-
-    				<?php
-    			}//end of while loop
-    		}//end of if statement
-
-    		?>
-
+    		<?php get_template_part( 'loop', 'index' );	?>
 
     </div> <!--/.content -->
-
   </div> <!-- /.container -->
 </div> <!-- /.main -->
 
