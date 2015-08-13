@@ -24,7 +24,7 @@ Default Styling
 
 html {
 	font-size: 10px;
-	background: yellow;
+	background: $yellow;
 }
 
 body {
@@ -45,16 +45,14 @@ h3{
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 1.9rem;
 	display: inline-block;
 	margin: 0;
 	@include span-columns(4.5);
-	text-transform: uppercase
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 h2{
-	// border: 2px solid black;
-	// padding: 2% 0;
-	// display: block;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1.5rem;
@@ -87,11 +85,11 @@ header {
 }
 
 h1 a {
-	color: $slategrey;
+	color: $teal;
 }
 
 h1 a:hover {
-	color: $teal;
+	color: $slategrey;
 }
 
 ul.menu {
@@ -102,7 +100,7 @@ ul.menu li {
 	padding: 0;
 	display: inline-block;
 	margin-right: 50px;
-	@include shift (0.8);
+	@include shift (1.6);
 	@include span-columns (2);
 }
 
@@ -189,9 +187,25 @@ ul.menu li a:hover:after {
 	font-size: 3rem;
 	text-align: left;
 }
+<<<<<<< HEAD
 .blog-link{
 	display:block;
 }
+=======
+
+.fa-long-arrow-right {
+	color: $teal;
+	font-size: 3rem;
+	position: absolute;
+	bottom: 20px;
+	left: 40px;
+}
+
+.fa-long-arrow-right:hover {
+	cursor:pointer;
+}
+
+>>>>>>> 2b608e9e60c5fdffc1be4e9778b3c9f37f82f6f6
 .blog-photo-container {
 	position: relative;
 	float: left;
@@ -214,7 +228,7 @@ ul.menu li a:hover:after {
 
 .blog-title {
 	text-align: center;
-	padding-top: 25%;
+	padding-top: 30%;
 	font-size: 2rem;
 	padding-bottom: 5%;
 }

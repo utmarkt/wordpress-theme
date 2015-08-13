@@ -16,6 +16,7 @@
                     <div class="main-photo-container">
                         <img class="main-photo"><?php the_post_thumbnail('square'); ?></img>
                         <h2 class="main-title"><?php the_content(); ?></h2>
+                        <a href="<?php get_page_link('about'); ?>"><i class="fa fa-long-arrow-right"></i></a>
                     </div>
                     
                     <?php 
