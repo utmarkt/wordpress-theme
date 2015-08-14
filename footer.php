@@ -1,7 +1,7 @@
 <footer>
   <div class="container social-footer">
   	<?php  dynamic_sidebar( 'footer-logo' ); ?>
-    <p>&copy; <a class="contact" href="http://evanolivia.com/">Evan Davis</a> &amp <a class="contact" href="http://jeanneschiller.com/">Jeanne Schiller</a><?php echo date('Y'); ?></p>
+    <p>&copy; <a class="contact" href="http://evanolivia.com/">Evan Davis</a> &amp <a class="contact" href="http://jeanneschiller.com/">Jeanne Schiller </a><?php echo date('Y'); ?></p>
     <?php  dynamic_sidebar( 'footer-social' ); ?>
   </div>
 </footer>
