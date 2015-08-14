@@ -249,19 +249,28 @@ ul.menu li a:hover:after {
 	border-top: 2px solid $teal;
 }
 //GALERY STYLES
+<<<<<<< HEAD
 // .ms-item {
 // 	width: 33%;
 // }
+=======
+.ms-item {
+	width: 33%;
+}
+
+>>>>>>> ca0dcef3001949e45db2e8f68dad554953ec82a5
 //ABOUT US/CONTACT/RSVP STYLES
 .about-me-container{
 	background: white;
 	position: relative;
 }
+
 .about-me-header{
 	position: fixed;
 	width: 100%;
 	z-index: 10;
 }
+
 .page-full-text{
 	display: block;
 	@include span-columns(9);
@@ -270,8 +279,8 @@ ul.menu li a:hover:after {
 	background: $teal;
 	padding: 15%;
 	padding-top: 20vh;
-
 }
+
 .page-full-img{
 	display: block;
 	@include span-columns(7);
@@ -280,14 +289,15 @@ ul.menu li a:hover:after {
 	position: fixed;
 	padding-top:5%;
 	width: 100%;
-
 }
+
 .about-me-footer{
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	z-index: 10;
 }
+
 //FOOTER STYLES
 footer{
 	@include outer-container;
@@ -310,7 +320,7 @@ footer{
 	font-size: 2rem;
 	padding: 0 1%;
 }
-.social-footer  i:hover{
+.social-footer i:hover{
 	color: $teal;
 }
 .social-footer .contact{
@@ -319,7 +329,7 @@ footer{
 	color: $slategrey;
 }
 .social-footer a:hover{
-	color: yellow;
+	color: $teal;
 }
 
 
