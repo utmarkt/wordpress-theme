@@ -72,11 +72,11 @@ function hackeryou_scripts() {
     null, // version number
     true //load in footer
   );
-	//Pull Masonry from a cdn
-  wp_enqueue_script( 
-	'masonry', 
-	'//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.js' 
-  );
+	//Pull Masonry from a cdn - trying plug in 
+ //  wp_enqueue_script( 
+	// 'masonry', 
+	// '//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.js' 
+ //  );
 
 }
 
