@@ -84,11 +84,14 @@ header {
 	padding: 2% 0;
 }
 
-h1 a {
+h1 a{
 	color: $teal;
 }
 
 h1 a:hover {
+	color: $slategrey;
+}
+h3 {
 	color: $slategrey;
 }
 
@@ -187,6 +190,11 @@ ul.menu li a:hover:after {
 	font-size: 3rem;
 	text-align: left;
 }
+
+.blog-link{
+	display:block;
+}
+
 
 .fa-long-arrow-right {
 	color: $teal;

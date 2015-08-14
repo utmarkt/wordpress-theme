@@ -30,11 +30,18 @@
                             <!-- Blog posts -->
                             <!-- For each blog post you get to work with that in here -->
                             <div class="blog-photo-container">
-                                 <img class="blog-photo"><?php the_post_thumbnail('small-square'); ?></img>
+                                 
+                                    <img class="blog-photo"><?php the_post_thumbnail('small-square'); ?>
+                                 
+                                 <a class="blog-link" href= <?php the_permalink( get_page_by_title("<?php the_title(); ?>")); ?> >
                                  <div class="blog-info">
-                                    <h3 class="blog-title"><a href= <?php the_permalink( get_page_by_title("<?php the_title(); ?>")); ?> ><?php the_title(); ?></a></h3>
+                                
+                                    <h3 class="blog-title"><?php the_title(); ?></h3>
                                     <p class="blog-date"><?php the_date('M j, Y'); ?></p>
+                                    
                                 </div> <!--/.blog-info-->
+                                </a>
+                               
                             </div><!--.blog-photo-container-->
 
                             <?php
