@@ -266,6 +266,7 @@ ul.menu li a:hover:after {
 .about-me-container{
 	background: white;
 	position: relative;
+	text-align: center;
 }
 
 .about-me-header{
@@ -284,6 +285,13 @@ ul.menu li a:hover:after {
 	padding-right: 15%;
 	padding-top: 20vh;
 	width: 100vh;
+}
+.about-title{
+	border: 2px solid white;
+}
+.about-post{
+	padding-top: 10%;
+	text-align: left;
 }
 .wpcf7-form{
 	background: $slategrey;
@@ -304,6 +312,7 @@ ul.menu li a:hover:after {
 	padding-top:5%;
 	width: 60%;
 	width: 100vh;
+	z-index: -1;
 
 }
 
