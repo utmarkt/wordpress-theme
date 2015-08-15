@@ -195,19 +195,6 @@ ul.menu li a:hover:after {
 	display:block;
 }
 
-
-.fa-long-arrow-right {
-	color: $teal;
-	font-size: 3rem;
-	position: absolute;
-	bottom: 20px;
-	left: 40px;
-}
-
-.fa-long-arrow-right:hover {
-	cursor:pointer;
-}
-
 .blog-photo-container {
 	position: relative;
 	float: left;
@@ -303,6 +290,7 @@ ul.menu li a:hover:after {
 footer{
 	@include outer-container;
 }
+
 .social-footer{
 	@include span-columns(12);
 	text-align: center;
@@ -311,24 +299,30 @@ footer{
 	padding: 3%;
 	width:100%;
 }
+
 .social-footer li{
 	display: block;
 }
+
 .social-footer  i{
 	color: $slategrey;
 }
+
 .social-footer  a{
 	font-size: 2rem;
 	padding: 0 1%;
 }
+
 .social-footer i:hover{
 	color: $teal;
 }
+
 .social-footer .contact{
 	font-size: 1rem;
 	padding: 0;
 	color: $slategrey;
 }
+
 .social-footer a:hover{
 	color: $teal;
 }
