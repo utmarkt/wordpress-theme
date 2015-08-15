@@ -197,6 +197,7 @@ ul.menu li a:hover:after {
 	font-size: 3rem;
 	text-align: left;
 	height: 300px;
+	
 }
 .main-title p{
 	margin: 0;
@@ -270,7 +271,6 @@ ul.menu li a:hover:after {
 .about-me-container{
 	background: white;
 	position: relative;
-	text-align: center;
 }
 
 .about-me-header{
@@ -281,14 +281,16 @@ ul.menu li a:hover:after {
 
 .page-full-text{
 	display: block;
-	@include span-columns(9);
-	@include shift(-1.5);
+	// @include outer-container;
+	@include span-columns(8);
+	@include shift(0);
 	color: $white;
 	background: $teal;
-	padding-left: 15%;
-	padding-right: 15%;
+	// padding-left: 15%;
+	// padding-right: 15%;
 	padding-top: 20vh;
 	width: 100vh;
+	text-align: center;
 }
 .about-title{
 	border: 2px solid white;
