@@ -235,6 +235,17 @@ ul.menu li a:hover:after {
 	margin: 0 10%;
 	border-top: 2px solid $teal;
 }
+//GALLERY STYLES
+.gallery{
+	background: $lightgrey;
+	margin: 0;
+	padding: 0;
+}
+
+.gallery-container{
+	background:  $lightgrey;
+}
+
 
 //ABOUT US/CONTACT/RSVP STYLES
 .about-me-container{
@@ -260,11 +271,13 @@ ul.menu li a:hover:after {
 	width: 100vh;
 }
 .wpcf7-form{
-	@include span-columns(12);
 	background: $slategrey;
 	text-align: center;
-	width: auto;
-	padding: 2%;
+	// width: auto;
+	padding:0;
+	margin-bottom: 15%;
+	border: solid 1px red;
+
 
 }
 .page-full-img{
