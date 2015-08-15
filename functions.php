@@ -15,6 +15,7 @@ function theme_setup() {
 	add_image_size('square', 380, 380, true);
 	add_image_size('small-square', 185, 185, true);
 	add_image_size('half', 640, 640, true);
+	add_image_size('post', 600, 600, true);
 
 
 	// Add default posts and comments RSS feed links to head
