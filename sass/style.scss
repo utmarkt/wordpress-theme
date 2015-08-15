@@ -63,6 +63,7 @@ h2{
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	@include outer-container;
 }
 
 .content {
@@ -83,7 +84,6 @@ h2{
 
 header {
 	background: $white;
-	@include outer-container;
 	padding: 2% 0;
 }
 
@@ -221,6 +221,7 @@ ul.menu li a:hover:after {
 	left: 20px;
 	bottom: 15px;
 	right: 10px;
+	transition: all 0.3s ease;
 }
 
 .blog-photo-container:hover .blog-info {
@@ -247,6 +248,11 @@ ul.menu li a:hover:after {
 	margin: 0 10%;
 	border-top: 2px solid $teal;
 }
+<<<<<<< HEAD
+//GALERY STYLES
+.ms-item {
+	width: 33%;
+=======
 //GALLERY STYLES
 .gallery{
 	background: $lightgrey;

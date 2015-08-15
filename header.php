@@ -16,10 +16,8 @@
 
 
 <body <?php body_class(); ?>>
-<div class="single-container">
 <header>
   <div class="container">
-
  
   <?php if ( get_theme_mod( 'themeslug_logo' ) ) : ?>
       <div class='site-logo'>
@@ -37,5 +35,4 @@
     )); ?>
   </div> <!-- /.container -->
 </header><!--/.header-->
-</div>
 
