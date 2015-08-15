@@ -56,6 +56,9 @@ h2{
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1.5rem;
+	border: 2px solid $slategrey;
+	padding: 20px;
+	display: inline-block;
 }
 .container {
 	max-width: 1200px;
@@ -91,6 +94,7 @@ h1 a{
 h1 a:hover {
 	color: $slategrey;
 }
+
 h3 {
 	color: $slategrey;
 }
@@ -154,6 +158,9 @@ ul.menu li a:hover:after {
 	@include outer-container;
 	padding: 3% 0;
 }
+.homepage-container h2{
+	padding: 2%;
+}
 
 .boxes-container {
 	max-width: 970px;
@@ -185,10 +192,14 @@ ul.menu li a:hover:after {
 .main-title {
 	color: $slategrey;
 	position: absolute;
-	top: 30px;
-	left: 30px;
+	top: 40px;
+	left: 37px;
 	font-size: 3rem;
 	text-align: left;
+	height: 300px;
+}
+.main-title p{
+	margin: 0;
 }
 
 .blog-link{
@@ -244,8 +255,12 @@ ul.menu li a:hover:after {
 
 .gallery-container{
 	background:  $lightgrey;
+	text-align: center;
+	margin: 0;
 }
-
+.gallery-container h2{
+	margin: 25px 0 0 0;
+}
 
 //ABOUT US/CONTACT/RSVP STYLES
 .about-me-container{
