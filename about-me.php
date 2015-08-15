@@ -14,7 +14,9 @@
 		    <?php // Start the loop ?>
 		    <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 		      <h2 class="about-title"><?php the_title(); ?></h2>
-		      <p><?php the_content(); ?></p>
+		      <div class="about-post">
+		      	<p><?php the_content(); ?></p>
+		      </div>
 		    <?php endwhile; // end the loop?>
 			
 		</div> <!-- /.page-full-text -->
