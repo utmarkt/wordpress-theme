@@ -16,6 +16,7 @@
 		      <h2 class="about-title"><?php the_title(); ?></h2>
 		      <p><?php the_content(); ?></p>
 		    <?php endwhile; // end the loop?>
+			
 		</div> <!-- /.page-full-text -->
 		<div class="page-full-img">    
 		    <?php 

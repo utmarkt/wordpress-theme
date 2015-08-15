@@ -264,13 +264,22 @@ ul.menu li a:hover:after {
 .page-full-text{
 	display: block;
 	@include span-columns(9);
-	@include shift(-2);
+	@include shift(-1.5);
 	color: $white;
 	background: $teal;
-	padding: 15%;
+	padding-left: 15%;
+	padding-right: 15%;
 	padding-top: 20vh;
+	width: 100vh;
 }
+.wpcf7-form{
+	@include span-columns(12);
+	background: $slategrey;
+	text-align: center;
+	width: auto;
+	padding: 2%;
 
+}
 .page-full-img{
 	display: block;
 	@include span-columns(7);
@@ -279,6 +288,8 @@ ul.menu li a:hover:after {
 	position: fixed;
 	padding-top:5%;
 	width: 60%;
+	width: 100vh;
+
 }
 
 .about-me-footer{
