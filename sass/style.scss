@@ -60,6 +60,7 @@ h2{
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	@include outer-container;
 }
 
 .content {
@@ -80,7 +81,6 @@ h2{
 
 header {
 	background: $white;
-	@include outer-container;
 	padding: 2% 0;
 }
 
@@ -209,6 +209,7 @@ ul.menu li a:hover:after {
 	left: 20px;
 	bottom: 15px;
 	right: 10px;
+	transition: all 0.3s ease;
 }
 
 .blog-photo-container:hover .blog-info {
@@ -236,16 +237,10 @@ ul.menu li a:hover:after {
 	border-top: 2px solid $teal;
 }
 //GALERY STYLES
-<<<<<<< HEAD
-// .ms-item {
-// 	width: 33%;
-// }
-=======
 .ms-item {
 	width: 33%;
 }
 
->>>>>>> ca0dcef3001949e45db2e8f68dad554953ec82a5
 //ABOUT US/CONTACT/RSVP STYLES
 .about-me-container{
 	background: white;
