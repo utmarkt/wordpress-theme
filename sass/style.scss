@@ -251,12 +251,16 @@ ul.menu li a:hover:after {
 	background: $lightgrey;
 	margin: 0;
 	padding: 0;
+	@include outer-container;
 }
 
 .gallery-container{
 	background:  $lightgrey;
 	text-align: center;
 	margin: 0;
+	@include span-columns(9);
+	@include shift();
+
 }
 .gallery-container h2{
 	margin: 25px 0 0 0;
