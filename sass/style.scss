@@ -248,25 +248,22 @@ ul.menu li a:hover:after {
 	margin: 0 10%;
 	border-top: 2px solid $teal;
 }
-<<<<<<< HEAD
-//GALERY STYLES
-.ms-item {
-	width: 33%;
-=======
+
 //GALLERY STYLES
 .gallery{
 	background: $lightgrey;
 	margin: 0;
 	padding: 0;
 	@include outer-container;
+
 }
 
 .gallery-container{
 	background:  $lightgrey;
 	text-align: center;
 	margin: 0;
-	@include span-columns(9);
-	@include shift();
+	@include span-columns(12);
+	
 
 }
 .gallery-container h2{
@@ -283,20 +280,26 @@ ul.menu li a:hover:after {
 	position: fixed;
 	width: 100%;
 	z-index: 10;
+	background: white;
+}
+.container-container{
+	max-width: initial;
 }
 
 .page-full-text{
 	display: block;
-	// @include outer-container;
-	@include span-columns(8);
-	@include shift(0);
 	color: $white;
 	background: $teal;
-	// padding-left: 15%;
-	// padding-right: 15%;
+	padding-left: 5%;
+	padding-right: 5%;
 	padding-top: 20vh;
-	width: 100vh;
 	text-align: center;
+	width: 50%;
+	float: left;
+	left: 0;
+	z-index: 5;
+	max-width: initial;
+
 }
 .about-title{
 	border: 2px solid white;
@@ -306,35 +309,41 @@ ul.menu li a:hover:after {
 	text-align: left;
 }
 .wpcf7-form{
-	background: $slategrey;
+	// background: $slategrey;
 	text-align: center;
-	// width: auto;
 	padding:0;
-	margin-bottom: 15%;
-	border: solid 1px red;
-
-
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom: 20vh;
+	
+}
+.wpcf7-form h3{
+	color: white;
+	padding: 1%;
+}
+.wpcf7-form input{
+	border: none;
+	padding:1%;
+	margin: 1%;
+	width: 100%;
+}
+.wpcf7-form textarea{
+	border: none;
+	width: 100%;
+	margin: 1%;
 }
 .page-full-img{
-	display: block;
-	@include span-columns(7);
-	@include shift(5);
-	background: $white;
 	position: fixed;
-	padding-top:5%;
-	width: 60%;
+	left: 50%;
+	overflow: hidden;
 	width: 100vh;
-	z-index: -1;
-
 }
-
 .about-me-footer{
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	z-index: 10;
 }
-
 //FOOTER STYLES
 footer{
 	@include outer-container;
