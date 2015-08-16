@@ -411,6 +411,11 @@ form h2{
 	background: none;
 	font-family: 'Belleza', sans-serif;
 }
+.wpcf7-form-control.wpcf7-submit:hover{
+	border: 2px solid $teal;
+	color: $teal;
+	background: white;
+}
 
 .page-full-img {
 	display: block;
