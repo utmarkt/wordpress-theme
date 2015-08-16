@@ -370,6 +370,15 @@ ul.menu li a:hover:after {
 	text-align: left;
 }
 
+.page-full-img {
+	display: block;
+	background: $white;
+	position: fixed;
+	left: 50%;
+	overflow: hidden;
+	width: 101vh;
+}
+//FORM STYLES
 form h2{
 	border: 2px solid white;
 	margin-top: 5vh;
@@ -411,15 +420,12 @@ form h2{
 	background: none;
 	font-family: 'Belleza', sans-serif;
 }
-
-.page-full-img {
-	display: block;
-	background: $white;
-	position: fixed;
-	left: 50%;
-	overflow: hidden;
-	width: 100vh;
+.wpcf7-form-control.wpcf7-submit:hover{
+	border: 2px solid $teal;
+	color: $teal;
+	background: white;
 }
+
 .about-me-footer {
 	position: fixed;
 	bottom: 0;
@@ -467,6 +473,15 @@ footer {
 	color: $teal;
 }
 
+//404 NOT FOUND
+.not-found-container{
+	background:white;
+}
 
+.not-found-body{
+	height:70vh;
+	text-align: center;
+	padding-top: 25vh;
+}
 
 
