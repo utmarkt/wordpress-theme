@@ -1,13 +1,18 @@
-<?php get_header(); ?>
+<div class= "not-found-container">
+	<?php get_header(); ?>
 
-<div class="main">
-  <div class="container">
+	<div class="main">
+	  <div class="container not-found-body">
 
-    <h1>Not Found</h1>
-    <p>Apologies, but the page you requested could not be found. Perhaps searching will help.</p>
-    <?php get_search_form(); ?>
+	    <h2>Not Found</h2>
+	    <br>
+	    <p>Apologies, but the page you requested could not be found. Perhaps searching will help.</p>
+	    <?php get_search_form(); ?>
 
-  </div> <!-- /.container -->
-</div> <!-- /.main -->
+	  </div> <!-- /.container -->
+	</div> <!-- /.main -->
 
-<?php get_footer(); ?>
+	<div class="footer-container content-grey">
+		<?php get_footer(); ?>
+	</div>
+</div>

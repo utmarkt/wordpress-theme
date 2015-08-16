@@ -369,7 +369,7 @@ ul.menu li a:hover:after {
 	padding-top: 10%;
 	text-align: left;
 }
-
+//FORM STYLES
 form h2{
 	border: 2px solid white;
 	margin-top: 5vh;
@@ -467,6 +467,15 @@ footer {
 	color: $teal;
 }
 
+//404 NOT FOUND
+.not-found-container{
+	background:white;
+}
 
+.not-found-body{
+	height:70vh;
+	text-align: center;
+	padding-top: 25vh;
+}
 
 
