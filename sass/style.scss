@@ -369,6 +369,15 @@ ul.menu li a:hover:after {
 	padding-top: 10%;
 	text-align: left;
 }
+
+.page-full-img {
+	display: block;
+	background: $white;
+	position: fixed;
+	left: 50%;
+	overflow: hidden;
+	width: 101vh;
+}
 //FORM STYLES
 form h2{
 	border: 2px solid white;
@@ -417,14 +426,6 @@ form h2{
 	background: white;
 }
 
-.page-full-img {
-	display: block;
-	background: $white;
-	position: fixed;
-	left: 50%;
-	overflow: hidden;
-	width: 100vh;
-}
 .about-me-footer {
 	position: fixed;
 	bottom: 0;
