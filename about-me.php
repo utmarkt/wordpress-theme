@@ -9,7 +9,7 @@
 		get_header();  ?>
 	</div>
 	<div class="main">
-	  <div class="container">
+	  <div class="container container-container clearfix">
 		<div class="page-full-text">
 		    <?php // Start the loop ?>
 		    <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -23,7 +23,7 @@
 		<div class="page-full-img">    
 		    <?php 
 		    if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-		    	the_post_thumbnail(auto);
+		    	the_post_thumbnail(contain);
 		    } 
 		    ?>
 		</div> <!-- /.page-full-img -->    
