@@ -8,10 +8,11 @@
         <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
           <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <h1 class="entry-title"><?php the_title(); ?></h1>
 
-            <div class="entry-meta">
-              <?php hackeryou_posted_on(); ?>
+            <div class="entry-meta clearfix">
+              <p class="entry-date"><?php the_date('M j Y'); ?></p>
+              <h1 class="entry-title"><?php the_title(); ?></h1>
+              <p class="entry-author">Posted by <?php the_author(); ?></p>
             </div><!-- .entry-meta -->
 
             <div class="entry-content">
@@ -20,11 +21,13 @@
                   the_post_thumbnail(large);
                 } 
               ?>
+              <?php get_sidebar(); ?>
               <?php the_content(); ?>
               <?php wp_link_pages(array(
                 'before' => '<div class="page-link"> Pages: ',
                 'after' => '</div>'
               )); ?>
+               
             </div><!-- .entry-content -->
 
             <div class="entry-utility">
@@ -44,7 +47,6 @@
 
       </div> <!-- /.content -->
 
-      <?php get_sidebar(); ?>
 
     </div> <!-- /.container -->
   </div> <!-- /.main -->

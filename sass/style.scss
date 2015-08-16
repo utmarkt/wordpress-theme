@@ -142,17 +142,74 @@ ul.menu li a:hover {
 ul.menu li a:hover:after {
 	width: 100%;
 }
-//LOOP ARTICLE STYLES
-.entry-content {
-	@include outer-container;
-}
 
 //SINGLE POST STYLES
-.single-container{
+.single-container {
 	background: white;
 }
 
-/*home.php styles*/
+.entry-title, .entry-meta, .entry-content {
+	background: $lightgrey;
+}
+
+.entry-date, .entry-title, .entry-author, .entry-content {
+	float: left;
+}
+
+.entry-title {
+	font-size: 2.25rem;
+	padding: 5% 2% 5px;
+	width: 50%;
+}
+
+.entry-date {
+	font-size: 2.5rem;
+	font-family: 'Belleza', sans-serif;
+	width: 80px;
+	height: 80px;
+	line-height: 1;
+	background: $teal;
+	color: $slategrey;
+	padding: 2% 1%;
+	margin-top: 4%;
+	text-align: center;
+}
+
+.entry-author {
+	font-size: 1.6rem;
+	padding: 0 2%;
+	width: 50%;
+	margin: 0;
+}
+
+.entry-content {
+	font-size: 1.6rem;
+}
+
+.entry-content p {
+	padding-left: 22%;
+}
+
+//SIDEBAR STYLES
+
+.sidebar {
+	float:left;
+	width: 18%;
+	padding: 1% 0;
+	margin: 2% 1% 0 0;
+	border-right: 2px solid $teal;
+}
+
+.sidebar-list li a {
+	color: $slategrey;
+}
+
+.sidebar-list li a:hover {
+	color: $teal;
+}
+
+
+//HOMEPAGE STYLES
 
 .homepage-container {
 	@include outer-container;
@@ -199,6 +256,7 @@ ul.menu li a:hover:after {
 	height: 300px;
 	
 }
+
 .main-title p{
 	margin: 0;
 }
@@ -250,7 +308,7 @@ ul.menu li a:hover:after {
 }
 
 //GALLERY STYLES
-.gallery{
+.gallery {
 	background: $lightgrey;
 	margin: 0;
 	padding: 0;
@@ -258,25 +316,25 @@ ul.menu li a:hover:after {
 
 }
 
-.gallery-container{
+.gallery-container {
 	background:  $lightgrey;
 	text-align: center;
 	margin: 0;
-	@include span-columns(12);
-	
-
+	@include span-columns(9);
+	@include shift();
 }
-.gallery-container h2{
+
+.gallery-container h2 {
 	margin: 25px 0 0 0;
 }
 
 //ABOUT US/CONTACT/RSVP STYLES
-.about-me-container{
+.about-me-container {
 	background: white;
 	position: relative;
 }
 
-.about-me-header{
+.about-me-header {
 	position: fixed;
 	width: 100%;
 	z-index: 10;
@@ -286,7 +344,7 @@ ul.menu li a:hover:after {
 	max-width: initial;
 }
 
-.page-full-text{
+.page-full-text {
 	display: block;
 	color: $white;
 	background: $teal;
@@ -301,13 +359,16 @@ ul.menu li a:hover:after {
 	max-width: initial;
 
 }
-.about-title{
+
+.about-title {
 	border: 2px solid white;
 }
-.about-post{
+
+.about-post {
 	padding-top: 10%;
 	text-align: left;
 }
+
 .wpcf7-form{
 	// background: $slategrey;
 	text-align: center;
@@ -332,56 +393,74 @@ ul.menu li a:hover:after {
 	width: 100%;
 	margin: 1%;
 }
-.page-full-img{
+
+.wpcf7-form {
+	background: $slategrey;
+	text-align: center;
+	padding:0;
+	margin-bottom: 15%;
+	border: solid 1px red;
+}
+
+.page-full-img {
+	display: block;
+	@include span-columns(7);
+	@include shift(5);
+	background: $white;
 	position: fixed;
 	left: 50%;
 	overflow: hidden;
 	width: 100vh;
+
 }
 .about-me-footer{
+	z-index: -1;
+}
+
+.about-me-footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	z-index: 10;
 }
 //FOOTER STYLES
-footer{
+footer {
 	@include outer-container;
 }
 
-.social-footer{
+.social-footer {
 	@include span-columns(12);
 	text-align: center;
 	color: $slategrey;
 	background: $lightgrey;
 	padding: 3%;
-	width:100%;
+	width: 100%;
 }
 
-.social-footer li{
+.social-footer li {
 	display: block;
 }
 
-.social-footer  i{
+.social-footer  i {
 	color: $slategrey;
 }
 
-.social-footer  a{
+.social-footer  a {
 	font-size: 2rem;
 	padding: 0 1%;
 }
 
-.social-footer i:hover{
+.social-footer i:hover {
 	color: $teal;
 }
 
-.social-footer .contact{
+.social-footer .contact {
 	font-size: 1rem;
 	padding: 0;
 	color: $slategrey;
 }
 
-.social-footer a:hover{
+.social-footer a:hover {
 	color: $teal;
 }
 
