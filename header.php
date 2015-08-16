@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  <link rel="icon" 
+      type="image/png" 
+      href="favicon-wp.png">
   <link href='http://fonts.googleapis.com/css?family=Belleza|Open+Sans:300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <?php // Load our CSS ?>
