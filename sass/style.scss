@@ -351,6 +351,7 @@ ul.menu li a:hover:after {
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-top: 20vh;
+	padding-bottom: 10vh;
 	text-align: center;
 	width: 50%;
 	float: left;
@@ -369,14 +370,17 @@ ul.menu li a:hover:after {
 	text-align: left;
 }
 
+form h2{
+	border: 2px solid white;
+	margin-top: 10vh;
+	margin-bottom: 2%;
+}
 .wpcf7-form{
-	// background: $slategrey;
 	text-align: center;
 	padding:0;
 	padding-top:10px;
 	padding-bottom:10px;
 	margin-bottom: 20vh;
-	
 }
 .wpcf7-form h3{
 	color: white;
@@ -385,38 +389,37 @@ ul.menu li a:hover:after {
 .wpcf7-form input{
 	border: none;
 	padding:1%;
-	margin: 1%;
+	margin: 1% 0;
 	width: 100%;
+	background: white;
 }
 .wpcf7-form textarea{
 	border: none;
 	width: 100%;
-	margin: 1%;
+	margin: 1% 0;
 }
-
-.wpcf7-form {
-	background: $slategrey;
+.wpcf7-form-control.wpcf7-submit{
+	text-transform: uppercase;
+	border: 2px solid white;
+	padding: 20px;
+	color: white;
 	text-align: center;
-	padding:0;
-	margin-bottom: 15%;
-	border: solid 1px red;
+	font-size: 1.5rem;
+	padding: 20px;
+	display: inline-block;
+	width: 30%;
+	background: none;
+	font-family: 'Belleza', sans-serif;
 }
 
 .page-full-img {
 	display: block;
-	@include span-columns(7);
-	@include shift(5);
 	background: $white;
 	position: fixed;
 	left: 50%;
 	overflow: hidden;
 	width: 100vh;
-
 }
-.about-me-footer{
-	z-index: -1;
-}
-
 .about-me-footer {
 	position: fixed;
 	bottom: 0;
