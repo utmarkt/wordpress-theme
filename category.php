@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+
+/*
+  Template Name: archives
+*/
+
+get_header();  ?>
+
 
 <div class="main">
   <div class="container">
@@ -15,6 +22,6 @@
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
-<div class="footer-container content-grey">
+<div class="footer-container content-grey archive-footer">
   <?php get_footer(); ?>
  </div> 

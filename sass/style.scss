@@ -58,6 +58,7 @@ h2 {
 	font-size: 1.5rem;
 	padding: 20px;
 	display: inline-block;
+	border: 2px solid $slategrey;
 }
 
 .container {
@@ -152,7 +153,8 @@ ul.menu li a:hover:after {
 	@include outer-container;
 	padding: 3% 0;
 }
-.homepage-container h2{
+
+.homepage-container h2 {
 	padding: 2%;
 }
 
@@ -191,13 +193,14 @@ ul.menu li a:hover:after {
 	font-size: 3rem;
 	text-align: left;
 	height: 300px;	
+	border: none;
 }
 
-.main-title p{
+.main-title p {
 	margin: 0;
 }
 
-.blog-link{
+.blog-link {
 	display:block;
 }
 
@@ -259,8 +262,8 @@ ul.menu li a:hover:after {
 .entry-title {
 	font-size: 2.25rem;
 	padding: 5% 2% 5px;
-	width: 50%;
 	text-align: left;
+	width: 50%;
 }
 
 .entry-title a {
@@ -297,7 +300,6 @@ ul.menu li a:hover:after {
 
 .entry-content p {
 	padding-top: 1%;
-	padding-left: 25%;
 }
 
 .addtoany_content_bottom {
@@ -331,7 +333,7 @@ ul.menu li a:hover:after {
 #nav-below p {
 	margin: 0;
 	width: 50%;
-	float:left;
+	float: left;
 	background: $lightgrey;
 	font-size: 2rem;
 }
@@ -378,7 +380,8 @@ ul.menu li a:hover:after {
 	@include outer-container;
 	padding: 3% 0;
 }
-.homepage-container h2{
+
+.homepage-container h2 {
 	padding: 2%;
 }
 
@@ -388,11 +391,6 @@ ul.menu li a:hover:after {
 
 .main {
 	background: $lightgrey;
-}
-
-.content {
-	width: 100%;
-	// background: white;
 }
 
 .blog-title {
@@ -419,12 +417,12 @@ ul.menu li a:hover:after {
 	height: 300px;	
 }
 
-.main-title p{
+.main-title p {
 	margin: 0;
 }
 
-.blog-link{
-	display:block;
+.blog-link {
+	display: block;
 }
 
 .blog-photo-container {
@@ -556,26 +554,26 @@ ul.menu li a:hover:after {
 
 //FORM STYLES
 
-form h2{
+form h2 {
 	border: 2px solid white;
 	margin-top: 5vh;
 	margin-bottom: 5vh;
 }
 
-.wpcf7-form{
+.wpcf7-form {
 	text-align: center;
-	padding:0;
-	padding-top:10px;
-	padding-bottom:10px;
+	padding: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	margin-bottom: 20vh;
 }
 
-.wpcf7-form h3{
+.wpcf7-form h3 {
 	color: white;
 	padding: 1%;
 }
 
-.wpcf7-form input{
+.wpcf7-form input {
 	border: none;
 	padding:1%;
 	margin: 1% 0;
@@ -583,13 +581,13 @@ form h2{
 	background: white;
 }
 
-.wpcf7-form textarea{
+.wpcf7-form textarea {
 	border: none;
 	width: 100%;
 	margin: 1% 0;
 }
 
-.wpcf7-form-control.wpcf7-submit{
+.wpcf7-form-control.wpcf7-submit {
 	text-transform: uppercase;
 	border: 2px solid white;
 	padding: 20px;
@@ -603,7 +601,7 @@ form h2{
 	font-family: 'Belleza', sans-serif;
 }
 
-.wpcf7-form-control.wpcf7-submit:hover{
+.wpcf7-form-control.wpcf7-submit:hover {
 	border: 2px solid $teal;
 	color: $teal;
 	background: white;
@@ -679,38 +677,44 @@ footer {
 }
 
 
-//page content
-.page-main{
+//PAGE CONTENT
+.page-main {
 	min-height: 70vh;
 }
-.page-content{
+
+.page-content {
 	@include span-columns(9);
 	min-height: 50vh;
 	margin: 24px 2% 0 0;
 }
-.page-main .sidebar{
+
+.page-main .sidebar {
 	background: white;
 	padding: 2%;
 	@include span-columns(3);
 	min-height: 81vh;
 }
-.page-main .sidebar h3{
+
+.page-main .sidebar h3 {
 	margin-right: 0;
 }
-.page-content{
+
+.page-content {
 	text-align: center;
 }
+
 .page-content-title,
-.page-content-content{
+.page-content-content {
 	margin: 0 0% 3% 0;
 	background: white;
 	padding: 5%;
 }
-.page-content img{
+
+.page-content img {
 	width: 100%;
 	height: auto;
-
 }
-.page-content-content{
+
+.page-content-content {
 	text-align: left;
 }
