@@ -59,6 +59,9 @@ h2 {
 	padding: 20px;
 	display: inline-block;
 }
+a{
+	color: $teal;
+}
 
 .container {
 	max-width: 1200px;
@@ -166,7 +169,7 @@ ul.menu li a:hover:after {
 
 .content {
 	width: 100%;
-	background: white;
+	// background: white;
 }
 
 .blog-title {
@@ -679,7 +682,7 @@ footer {
 }
 
 
-//page content
+//SINGLE PHOTO PAGE CONTENT
 .page-main{
 	min-height: 70vh;
 }
@@ -714,3 +717,33 @@ footer {
 .page-content-content{
 	text-align: left;
 }
+
+//AUTHOR PAGE
+.author-info{
+	@include span-columns(12);
+}
+.author-title,
+.author-pic,
+.author-description{
+	float: left;
+}
+.author-pic{
+	@include span-columns(3);
+	margin: 2% 0 0 0;
+}
+.author-title{
+	background: white;
+	text-align: center;
+	@include span-columns(9);
+	margin: 2% 0 0 2%;
+
+}
+.author-description{
+	@include span-columns(9);
+	margin: 2% 0 0 2%;
+	padding: 2%;
+	background: white;
+}
+
+
+
