@@ -39,7 +39,7 @@ img {
 
 h1,
 h2,
-h3{
+h3 {
 	font-family: 'Belleza', sans-serif;
 	margin: 0;
 }
@@ -52,7 +52,8 @@ h1 {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
-h2{
+
+h2 {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1.5rem;
@@ -60,6 +61,7 @@ h2{
 	padding: 20px;
 	display: inline-block;
 }
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -87,7 +89,7 @@ header {
 	padding: 2% 0;
 }
 
-h1 a{
+h1 a {
 	color: $teal;
 }
 
@@ -101,14 +103,13 @@ h3 {
 
 ul.menu {
 	@include span-columns(7.5);
+	text-align: right;
 }
 
 ul.menu li {
 	padding: 0;
 	display: inline-block;
 	margin-right: 50px;
-	@include shift (1.6);
-	@include span-columns (2);
 }
 
 ul.menu li a {
@@ -307,8 +308,7 @@ ul.menu li a:hover:after {
 	left: 37px;
 	font-size: 3rem;
 	text-align: left;
-	height: 300px;
-	
+	height: 300px;	
 }
 
 .main-title p{
@@ -412,7 +412,7 @@ ul.menu li a:hover:after {
 	left: 0;
 	z-index: 5;
 	max-width: initial;
-
+	font-size: 1.2rem;
 }
 
 .about-title {
@@ -420,7 +420,7 @@ ul.menu li a:hover:after {
 }
 
 .about-post {
-	padding-top: 10%;
+	padding-top: 5%;
 	text-align: left;
 }
 
