@@ -284,7 +284,7 @@ ul.menu li a:hover:after {
 
 .content {
 	width: 100%;
-	background: white;
+	// background: white;
 }
 
 .blog-title {
@@ -548,10 +548,37 @@ footer {
 
 
 //page content
+.page-main{
+	min-height: 70vh;
+}
 .page-content{
-background: $lightgrey;
-@include span-columns(9);
-min-height: 70vh;
-padding-top: 24px;
+	@include span-columns(9);
+	min-height: 50vh;
+	margin: 24px 2% 0 0;
+}
+.page-main .sidebar{
+	background: white;
+	padding: 2%;
+	@include span-columns(3);
+	min-height: 81vh;
+}
+.page-main .sidebar h3{
+	margin-right: 0;
+}
+.page-content{
+	text-align: center;
+}
+.page-content-title,
+.page-content-content{
+	margin: 0 0% 3% 0;
+	background: white;
+	padding: 5%;
+}
+.page-content img{
+	width: 100%;
+	height: auto;
 
+}
+.page-content-content{
+	text-align: left;
 }
