@@ -3,7 +3,7 @@
 <div class="main">
   <div class="container">
 
-    <div class="content">
+    <div class="content page-content">
       <?php // Start the loop ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
@@ -12,9 +12,9 @@
 
       <?php endwhile; // end the loop?>
     </div> <!-- /,content -->
-
-    <?php get_sidebar(); ?>
-
+    <div class="page-sidebar">
+      <?php get_sidebar(); ?>
+    </div>
   </div> <!-- /.container -->
 </div> <!-- /.main -->
 <div class="footer-container content-grey">
