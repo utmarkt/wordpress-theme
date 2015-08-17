@@ -11,12 +11,14 @@
 
             <div class="entry-meta clearfix">
               <p class="entry-date"><?php the_date('M j Y'); ?></p>
-              <h1 class="entry-title"><?php the_title(); ?></h1>
-              <p class="entry-author">Posted by 
-                <a class="name" href="<?php echo get_author_posts_url( get_the_author_meta('ID') ); ?>">
-                  <?php the_author(); ?>
-                </a>
-              </p>
+              <div class="entry-info">
+                <h1 class="entry-title"><?php the_title(); ?></h1>
+                <p class="entry-author">Posted by 
+                  <a class="name" href="<?php echo get_author_posts_url( get_the_author_meta('ID') ); ?>">
+                    <?php the_author(); ?>
+                  </a>
+                </p>
+              </div><!--.entry-info-->
             </div><!-- .entry-meta -->
 
             <div class="entry-content">

@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php 
+
+/*
+  Template Name: archives
+*/
+
+get_header(); ?>
 
 <div class="main">
   <div class="container">
