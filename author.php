@@ -22,11 +22,20 @@
       <?php
       	// If a user has filled out their description, show a bio on their entries.
       	if ( get_the_author_meta('description') ) : ?>
-
-          <h2>About <?php the_author(); ?> </h2>
-      		<?php echo get_avatar( get_the_author_meta('user_email'), 60); ?>
-      		<?php the_author_meta('description'); ?>
-
+          <div class="author-info clearfix">
+            <div class="author-pic">
+        		  <?php echo get_avatar( get_the_author_meta('user_email'), 185); ?>
+        		</div>
+            <div class="author-title">
+              <h2>About <?php the_author(); ?> </h2>
+            </div>
+            <div class="author-description">
+              <?php the_author_meta('description'); ?>
+            </div>
+            <!-- <div class="author-sidebar">
+            <?php get_sidebar(); ?>
+            </div> -->
+          </div>    
         <?php endif; ?>
 
       	<?php

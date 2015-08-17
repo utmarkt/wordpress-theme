@@ -1,9 +1,15 @@
+<?php
+
+/*
+  Template Name: 404-not-found
+*/
+
+get_header();  ?>
+
 <div class= "not-found-container">
-	<?php get_header(); ?>
 
 	<div class="main">
 	  <div class="container not-found-body">
-
 	    <h2>Not Found</h2>
 	    <br>
 	    <p>Apologies, but the page you requested could not be found. Perhaps searching will help.</p>
