@@ -372,6 +372,104 @@ ul.menu li a:hover:after {
 	border-top: 1px solid $teal;
 }
 
+//HOMEPAGE STYLES
+
+.homepage-container {
+	@include outer-container;
+	padding: 3% 0;
+}
+.homepage-container h2{
+	padding: 2%;
+}
+
+.boxes-container {
+	max-width: 970px;
+}
+
+.main {
+	background: $lightgrey;
+}
+
+.content {
+	width: 100%;
+	// background: white;
+}
+
+.blog-title {
+	font-size: 2rem;
+}
+
+.main-photo-container {
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+.main-photo, .blog-photo {
+	margin: 5px;
+}
+
+.main-title {
+	color: $slategrey;
+	position: absolute;
+	top: 40px;
+	left: 37px;
+	font-size: 3rem;
+	text-align: left;
+	height: 300px;	
+}
+
+.main-title p{
+	margin: 0;
+}
+
+.blog-link{
+	display:block;
+}
+
+.blog-photo-container {
+	position: relative;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.blog-info {
+	background: rgba(255, 255, 255, 0.8);
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	bottom: 15px;
+	right: 10px;
+	transition: all 0.3s ease;
+}
+
+.blog-photo-container:hover .blog-info {
+	display: block;
+}
+
+.blog-title {
+	text-align: center;
+	padding-top: 30%;
+	font-size: 2rem;
+	padding-bottom: 5%;
+}
+
+.blog-title a {
+	color: $slategrey;
+}
+
+.blog-date {
+	font-size: 1.2rem;
+	font-family: 'Belleza', sans-serif;
+	color: $slategrey;
+	text-align: center;
+	padding-top: 3%;
+	margin: 0 10%;
+	border-top: 2px solid $teal;
+}
+
+
 //GALLERY STYLES
 .gallery {
 	background: $lightgrey;
@@ -582,10 +680,37 @@ footer {
 
 
 //page content
+.page-main{
+	min-height: 70vh;
+}
 .page-content{
-background: $lightgrey;
-@include span-columns(9);
-min-height: 70vh;
-padding-top: 24px;
+	@include span-columns(9);
+	min-height: 50vh;
+	margin: 24px 2% 0 0;
+}
+.page-main .sidebar{
+	background: white;
+	padding: 2%;
+	@include span-columns(3);
+	min-height: 81vh;
+}
+.page-main .sidebar h3{
+	margin-right: 0;
+}
+.page-content{
+	text-align: center;
+}
+.page-content-title,
+.page-content-content{
+	margin: 0 0% 3% 0;
+	background: white;
+	padding: 5%;
+}
+.page-content img{
+	width: 100%;
+	height: auto;
 
+}
+.page-content-content{
+	text-align: left;
 }
