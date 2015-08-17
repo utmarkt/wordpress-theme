@@ -560,7 +560,7 @@ footer {
 	background: white;
 	padding: 2%;
 	@include span-columns(3);
-	min-height: 65vh;
+	min-height: 81vh;
 }
 .page-main .sidebar h3{
 	margin-right: 0;
@@ -578,4 +578,7 @@ footer {
 	width: 100%;
 	height: auto;
 
+}
+.page-content-content{
+	text-align: left;
 }
